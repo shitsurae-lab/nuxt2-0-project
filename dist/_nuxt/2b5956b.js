@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{228:function(t,e,n){"use strict";n.r(e);var l={data:function(){return{title:"This is Top page"}}},r=n(32),component=Object(r.a)(l,(function(){var t=this,e=t.$createElement,n=t._self._c||e;return n("div",[n("h1",[t._v(t._s(""+t.title))])])}),[],!1,null,null,null);e.default=component.exports}}]);
