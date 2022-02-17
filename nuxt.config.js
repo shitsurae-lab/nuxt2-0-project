@@ -33,14 +33,14 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
     //画像圧縮①
-    // '@aceforth/nuxt-optimized-images',
+    '@aceforth/nuxt-optimized-images',
   ],
 
-  // //画像圧縮②
-  // optimizedImages: {
-  //   optimizeImages: true, //本番環境
-  //   optimizeImagesInDev: true, //開発環境
-  // },
+  //画像圧縮②
+  optimizedImages: {
+    optimizeImages: true, //本番環境
+    optimizeImagesInDev: false, //開発環境
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [],
