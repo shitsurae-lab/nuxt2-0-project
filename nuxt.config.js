@@ -1,4 +1,25 @@
+import axios from 'axios'
+
 export default {
+  //microCMS動的ルーティング設定
+  generate: {
+    async routes() {
+      const pages = await axios
+        .get('https://shitsurae104.microcms.io/api/v1/portfolio?limit=100', {
+          headers: {
+            'X-MICROCMS-API-KEY': 'ec3af9e4779a494bbc2a9a054a35ad1dceae',
+          },
+        })
+        .then((res) =>
+          res.data.contents.map((content) => ({
+            route: `/${content.id}`,
+            payload: content,
+          }))
+        )
+      return pages
+    },
+  },
+
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
